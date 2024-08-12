@@ -58,7 +58,7 @@
   
   - name: get the categories count
     ansible.builtin.command: mongo --host mongodb.daws45.online --quiet --eval 'db = db.getSiblingDB("catalogue"); db.products.count()'
-    rigister: product_count
+    register: product_count
 
   - name: print the cocunt 
     ansible.builtin.debug:
