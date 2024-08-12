@@ -57,7 +57,7 @@
       state: present
   
   - name: get the categories count
-    ansible.builtin.comman: /app/schema ]$ mongo --host mongodb.daws45.online --quiet --eval 'db = db.getSiblingDB("catalogue"); db.products.count()'
+    ansible.builtin.command: /app/schema ]$ mongo --host mongodb.daws45.online --quiet --eval 'db = db.getSiblingDB("catalogue"); db.products.count()'
     rigister: product_count
 
   - name: print the cocunt 
